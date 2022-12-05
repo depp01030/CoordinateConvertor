@@ -20,6 +20,7 @@ new_point_lst = AllStepObj.step_coordinate_conversion(target_step = 'panel',
 
 
 """
+#%%
 import numpy as np
 import os
 import sys
@@ -29,7 +30,7 @@ import re
 import copy
 from datetime import datetime
 import math
-os.chdir(r'C:\Users\User\Desktop\Python\CamDataExtractor')
+os.chdir(r'C:\Users\User\Desktop\Python\Git Repo\CamDataExtractor')
 #%%
 class CoordinateConvertor:
     
@@ -184,7 +185,8 @@ class CoordinateConvertor:
 
 
 def get_prof_from_odb(job_name, sr_step):
-
+    job_name  = 'pang-am0008-xxxx'
+    sr_step = 'panel'
     path = '{0}/steps/{1}/'.format(job_name, sr_step)
     profile_file = open(os.path.join(path,'profile.txt'),'r')
     profile_line_text = profile_file.readlines()
@@ -599,3 +601,5 @@ main_plot(convertor.all_step_dict ,polygon_list = new_list )
 
 
 
+
+# %%
