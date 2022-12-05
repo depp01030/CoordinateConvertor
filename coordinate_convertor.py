@@ -185,8 +185,8 @@ class CoordinateConvertor:
 
 
 def get_prof_from_odb(job_name, sr_step):
-    job_name  = 'pang-am0008-xxxx'
-    sr_step = 'panel'
+    # job_name  = 'pang-am0008-xxxx'
+    # sr_step = 'panel'
     path = '{0}/steps/{1}/'.format(job_name, sr_step)
     profile_file = open(os.path.join(path,'profile.txt'),'r')
     profile_line_text = profile_file.readlines()
